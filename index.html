@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Weather</title>
+</head>
+<body>
+
+    <!-- start header -->
+    <!-- <header class="p-5">
+
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo-info d-flex align-items-center">
+                 <a class="text-decoration-none pe-2" href="#" class="brand">
+                <img src="images/logo2x.png" alt="logo">
+            </a>
+            <div class="logo-name">
+                <h1 class="m-0">Weather</h1>
+                <small>tagline goes here</small>
+            </div>
+            </div>
+           
+            <nav>
+                <div class="nav-links">
+                    <ul class="list-unstyled d-flex align-items-center">
+                        <li><a class="text-decoration-none p-4" href="#">Home</a></li>
+                        <li><a class="text-decoration-none p-4" href="#">News</a></li>
+                        <li><a class="text-decoration-none p-4" href="#">Live Cameras</a></li>
+                        <li><a class="text-decoration-none p-4"href="#">Photos</a></li>
+                        <li><a class="text-decoration-none p-4" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+            </nav>
+        </div>
+    </header> -->
+
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg p-5">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img class="me-2" src="images/logo2x.png" alt="logo">
+            <div class="info-logo text-white">
+                <h1 class="m-0 fs-6">Weather</h1>
+                <small>tagline goes here</small>
+            </div>
+          </a>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto  mb-2 mb-lg-0">
+              <li class="nav-item ps-5">
+                <a class="nav-link main-one " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item ps-5 ">
+                <a class="nav-link  main-two" href="#">News</a>
+              </li>
+              <li class="nav-item ps-5">
+                <a class="nav-link  main-two" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item ps-5">
+                <a class="nav-link  main-two" href="#">Photos</a>
+              </li>
+              <li class="nav-item ps-5">
+                <a class="nav-link  main-two" href="#">Contact</a>
+              </li>
+              <li class="nav-item ps-5">
+                <button id="find-my-location" class="btn btn-warning border-none fw-bolder">Find My Location</button>
+              </li>
+              
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+      <!-- start hero section -->
+
+      <div class="hero-section">
+        <div class="container pt-5">
+            <div class="my-input w-75 mx-auto my-5  position-relative">
+                <input id="searchInput" placeholder="Find Your Location..." type="text" class="w-100  rounded-5">
+                <button id="searchBtn" class="submit">Find</button>
+            </div>
+            <!-- start making the tempreture app weather -->
+
+            <div class="row gy-2 ">
+                <div class="col-lg-4">
+                    <div class="temp-header-1 d-flex justify-content-between text-white p-2 rounded-top-3">
+                        <div id="dayOne" class="day">Friday</div>
+                        <div id="theMonthName" class="date">4August</div>
+                    </div>
+                    <div class="temp-content-1 ">
+                        <div id="locationCity" class="location text-white p-3 fs-5">Cairo</div>
+                        <div class="temp-degree d-flex align-items-center">
+                            <div id="degreeOne" class="num-1 fw-bold p-3 text-white">
+                                30
+                                <sup>o</sup>C
+                            </div>
+                            <div class="temp-icom">
+                                <img id="weatherIcon" src="images/sunny.png" alt="">
+                            </div>
+
+                        </div>
+                        <div id="customOne" class="custom p-3">Sunny</div>
+                        <div class="spans">
+                            <span><i class="fa-solid fa-umbrella"></i> 20%</span>
+                            <span><i class="fa-solid fa-wind"></i> 18km/h</span>
+                            <span><i class="fa-solid fa-compass"></i> East</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="temp-header-2  text-white p-2 rounded-top-3 text-center">
+                        <div id="nextDay" class="day">Friday</div>
+                        
+                    </div>
+                    <div class="temp-content-2 d-flex align-items-center justify-content-center flex-column ">
+                        
+                        <div class="temp-degree">
+
+                            <div class="temp-icom text-center pt-4">
+                                <img id="icon-two" src="images/sunny.png" alt="">
+                            </div>
+                            <div id="theDegree-Two" class="num-2 fs-4 fw-bold p-2 text-white">
+                                34
+                                <sup>o</sup>C
+                            </div>
+                            <div id="smallTwo" class="text-center text-secondary fw-bold fs-6">26.3 <sup>o</sup>  </div>
+                            
+
+                        </div>
+                        <div id="customTwo" class="custom p-5">Sunny</div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="temp-header-1 text-center text-white p-2 rounded-top-3">
+                        <div id="thirdDay" class="day">Friday</div>
+                        
+                    </div>
+                    <div class="temp-content-1 d-flex align-items-center justify-content-center flex-column ">
+                        <div class="temp-icom pt-4">
+                                <img id="icon-thrd" src="images/sunny.png" alt="">
+                            </div>
+
+
+                        <div class="temp-degree d-flex align-items-center">
+                            <div id="thirdDegree" class="num-1 fs-4 fw-bold p-2 text-white">
+                                34
+                                <sup>o</sup>C
+                            </div>
+                            
+                            
+
+                        </div>
+                        <div id="smallThird" class="text-center text-secondary fw-bold fs-6">26.3 <sup>o</sup>  </div>
+                        <div id="customThree" class="custom p-5">Sunny</div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+            
+
+
+
+           
+            
+        </div>
+
+      </div>
+
+      
+
+      
+      
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"> </script>
+</body>
+</html>
